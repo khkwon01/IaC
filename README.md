@@ -6,6 +6,18 @@
 - Review the Terraform plan to ensure that the configuration will result in the expected state and infrastructure.
 - Apply the configuration to create your Terraform state and infrastructure.
 
+### 1.1 move state file from default to another path
+```
+terraform {
+  backend "local" {
+    path = "terraform/state/terraform.tfstate"
+  }
+}
+
+terraform init -migrate-state
+```
+
+
 ## 2. Import terraform configuaration from already made resource using other type
 ![image](https://github.com/khkwon01/IaC/assets/8789421/b7b34db9-89fd-461e-9161-9f2c4fc9e620)
 - Identify the existing infrastructure to be imported.
