@@ -11,3 +11,4 @@
 - Write a Terraform configuration that matches that infrastructure.
 - Review the Terraform plan to ensure that the configuration matches the expected state and infrastructure.
 - Apply the configuration to update your Terraform state.
+- Importing Tools(don't supported by hashicorp) : https://github.com/GoogleCloudPlatform/terraformer
